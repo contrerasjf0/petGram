@@ -1,3 +1,11 @@
-# curso-platzi-react-avanzado ⚛️
+# PetGram-RA 🐶🐱🐵🦁
 
-Repositorio con el código del [Curso Avanzado de React de Platzi](https://platzi.com/cursos/react-avanzado/)
+Project to experiment new tools with React
+
+* Style-Components
+* Hooks
+* GraphQL and React Apollo
+* Reach Router
+* Context
+
+
