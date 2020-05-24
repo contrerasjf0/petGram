@@ -25,9 +25,3 @@ export const List = styled.ul`
 export const Item = styled.li`
     padding: 0 8px;
 `
-export const ContainerLoader = styled.li`
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 10px 0;
-`

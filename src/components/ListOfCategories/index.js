@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Category } from '../Category'
 
-import { ContainerLoader, List, Item } from './styles'
+import { List, Item } from './styles'
+import { ContainerLoader } from '../Utils'
 import { FancyLoader } from '../Loader'
 
 function useCategoriesData () {
