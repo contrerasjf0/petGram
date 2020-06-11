@@ -1,6 +1,9 @@
 import React from 'react'
-import Context from '../Context'
+
+import { RegisterMutation } from '../container/RegisterMutation'
 import { UserForm } from '../components/UserForm'
+
+import Context from '../Context'
 
 export const NotRegisteredUser = () => (
   <Context.Consumer>
@@ -8,10 +11,23 @@ export const NotRegisteredUser = () => (
       ({ activateAuth }) => {
         return (
           <>
-            <UserForm title='Registrarse' onSubmit={activateAuth} />
+            <RegisterMutation>
+              {
+                (register) => {
+                  const onSubmit = ({ email, password }) => {
+                    const variables = {
+                      input: { email, password }
+                    }
+                    register({ variables }).then(activateAuth)
+                  }
+
+                  return <UserForm title='Registrarse' onSubmit={onSubmit} />
+                }
+              }
+            </RegisterMutation>
+
             <UserForm title='Iniciar sesión' onSubmit={activateAuth} />
-          </>
-        )
+          </>)
       }
     }
   </Context.Consumer>
