@@ -15,7 +15,7 @@ export const NotRegisteredUser = () => {
         {(register, { data, loading, error }) => {
           const onSubmit = ({ email, password }) => {
             const variables = {
-              input: { email, password },
+              input: { email, password }
             }
             register({ variables })
               .then(({ data }) => {
@@ -30,7 +30,7 @@ export const NotRegisteredUser = () => {
             <UserForm
               disabled={loading}
               error={errorMsg}
-              title="Registrarse"
+              title='Registrarse'
               onSubmit={onSubmit}
             />
           )
