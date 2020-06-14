@@ -1,7 +1,7 @@
 import React from 'react'
 import { Router } from '@reach/router'
 
-import { GlobalStyle } from './styles/GlobalStyles'
+import { GlobalStyle } from './styles-components/GlobalStyles'
 import { Logo } from './components/Logo'
 import { NavBar } from './components/NavBar'
 
