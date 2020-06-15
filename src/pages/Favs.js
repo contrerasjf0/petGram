@@ -1,7 +1,7 @@
 import React from 'react'
 import { ListOfFavoritesQuery } from '../container/ListOfFavoritesQuery'
 
-export const Favs = () => {
+export default () => {
   return (
     <>
       <h1>Favs</h1>
